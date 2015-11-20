@@ -8,3 +8,10 @@
  * Author URI: http://jacobgoh.com
  * License: GPL2
  */
+
+function jg_ffw_script(){
+	wp_register_script( 'jg-force-full-width-shortcode-script', plugins_url( '/js/jg-force-full-width-shortcode.js', __FILE__ ) , array( 'jquery') );
+
+	wp_enqueue_script( 'jg-force-full-width-shortcode-script' );
+}
+add_action( 'wp_enqueue_scripts', 'jg_ffw_script' );
