@@ -15,3 +15,8 @@ function jg_ffw_script(){
 	wp_enqueue_script( 'jg-force-full-width-shortcode-script' );
 }
 add_action( 'wp_enqueue_scripts', 'jg_ffw_script' );
+
+function jg_ffw_shortcode( $atts, $content = null ) {
+	return '<div class="jg-force-full-width">' . $content . '</div>';
+}
+add_shortcode( 'jg-ffw', 'jg_ffw_shortcode' );
