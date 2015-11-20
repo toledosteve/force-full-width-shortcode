@@ -9,11 +9,13 @@
  * License: GPL2
  */
 
+//register js script 
 function jg_ffw_script(){
 	wp_register_script( 'jg-force-full-width-shortcode-script', plugins_url( '/js/jg-force-full-width-shortcode.js', __FILE__ ) , array( 'jquery') );
 }
 add_action( 'wp_enqueue_scripts', 'jg_ffw_script' );
 
+// adding shortcodes functions
 function jg_ffw_shortcode( $atts, $content = null ) {
 	wp_enqueue_script( 'jg-force-full-width-shortcode-script' );
 	return '<div class="jg-force-full-width">' . $content . '</div>';
