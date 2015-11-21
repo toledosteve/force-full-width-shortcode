@@ -20,6 +20,7 @@ Demo: http://force-full-width-shortcode.jacobgoh.com/
 
 ** Only works when the page/post does not have sidebar
 
+GitHub: <a href="https://github.com/jacobgoh101/force-full-width-shortcode">https://github.com/jacobgoh101/force-full-width-shortcode</a>
 
 == Installation ==
 
