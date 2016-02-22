@@ -8,7 +8,7 @@ jQuery(function(){
     //set the full width div's width to the body's width, which is always full screen width
     jQuery(".jg-force-full-width").css({"width": jQuery("body").width() + "px"});
     //set all full width div's children's width to 100%
-    jQuery(".jg-force-full-width").children().css({"width":"100%"});
+    jQuery(".jg-force-full-width").find("*").css({"width":"100%"});
 
     //setting margin for aligning full width div to the left
     //only needed when content area width is smaller than screen width
